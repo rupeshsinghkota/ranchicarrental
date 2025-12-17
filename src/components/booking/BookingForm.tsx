@@ -70,6 +70,10 @@ export default function BookingForm({ className, initialValues }: BookingFormPro
             await fetch(GOOGLE_SCRIPT_URL, {
                 method: "POST",
                 mode: "no-cors",
+                headers: {
+                    "Content-Type": "text/plain",
+                },
+                redirect: "follow",
                 body: JSON.stringify(submissionData),
             });
 
