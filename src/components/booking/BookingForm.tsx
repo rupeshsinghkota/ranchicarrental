@@ -67,13 +67,14 @@ export default function BookingForm({ className, initialValues }: BookingFormPro
             // 1. Send to Google Sheets
             // We use no-cors mode because Google Scripts doesn't support CORS headers easily for simple posts,
             // but the data still gets submitted.
-            await fetch(GOOGLE_SCRIPT_URL, {
+            await fetch(`${GOOGLE_SCRIPT_URL}?t=${new Date().getTime()}`, {
                 method: "POST",
                 mode: "no-cors",
                 headers: {
                     "Content-Type": "text/plain",
                 },
                 redirect: "follow",
+                referrerPolicy: "no-referrer",
                 body: JSON.stringify(submissionData),
             });
 
