@@ -67,15 +67,26 @@ export default function BookingForm({ className, initialValues }: BookingFormPro
             // 1. Send to Google Sheets
             // We use no-cors mode because Google Scripts doesn't support CORS headers easily for simple posts,
             // but the data still gets submitted.
-            await fetch(`${GOOGLE_SCRIPT_URL}?t=${new Date().getTime()}`, {
-                method: "POST",
-                mode: "no-cors",
-                headers: {
-                    "Content-Type": "text/plain",
-                },
-                redirect: "follow",
-                referrerPolicy: "no-referrer",
-                body: JSON.stringify(submissionData),
+            // 1. Send to Google Sheets using XMLHttpRequest (More reliable for Google Apps Script redirects)
+            await new Promise((resolve, reject) => {
+                const xhr = new XMLHttpRequest();
+                xhr.open("POST", GOOGLE_SCRIPT_URL);
+                xhr.setRequestHeader("Content-Type", "text/plain;charset=utf-8");
+
+                xhr.onreadystatechange = () => {
+                    // Google Scripts returns 302 then 200. XHR handles redirects automatically usually.
+                    // Since CORS might block reading status, we assume completion is success if no network error.
+                    if (xhr.readyState === 4) {
+                        resolve("Submitted");
+                    }
+                };
+
+                xhr.onerror = () => {
+                    // Only triggers on network level failure
+                    reject("Network Error");
+                };
+
+                xhr.send(JSON.stringify(submissionData));
             });
 
             // 2. Simulate small delay for UX
