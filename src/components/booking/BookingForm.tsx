@@ -74,6 +74,15 @@ export default function BookingForm({ className, initialValues }: BookingFormPro
                 throw new Error("Server submission failed");
             }
 
+            // Track Google Ads Conversion
+            if (typeof window !== "undefined" && (window as any).gtag) {
+                (window as any).gtag('event', 'conversion', {
+                    'send_to': 'AW-16683904204/6WIdCJ78g9MbEMzZwJM-',
+                    'value': 1.0,
+                    'currency': 'INR'
+                });
+            }
+
             // 2. Simulate small delay for UX
             await new Promise(resolve => setTimeout(resolve, 800));
 
