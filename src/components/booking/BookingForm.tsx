@@ -38,9 +38,6 @@ export default function BookingForm({ className, initialValues }: BookingFormPro
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
 
-    // REPLACE THIS WITH YOUR GOOGLE APPS SCRIPT URL
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx6tOGRwNiGo6bgM06AlV5LE1LU-daZpaIZm90DqdGc8npD56COARTuw_iMfi5wCgR6GA/exec";
-
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
         setLoading(true);
@@ -64,30 +61,18 @@ export default function BookingForm({ className, initialValues }: BookingFormPro
                 estimatedTotal: finalPrice > 0 ? `₹${finalPrice.toLocaleString('en-IN')}` : "N/A"
             };
 
-            // 1. Send to Google Sheets
-            // We use no-cors mode because Google Scripts doesn't support CORS headers easily for simple posts,
-            // but the data still gets submitted.
-            // 1. Send to Google Sheets using XMLHttpRequest (More reliable for Google Apps Script redirects)
-            await new Promise((resolve, reject) => {
-                const xhr = new XMLHttpRequest();
-                xhr.open("POST", GOOGLE_SCRIPT_URL);
-                xhr.setRequestHeader("Content-Type", "text/plain;charset=utf-8");
-
-                xhr.onreadystatechange = () => {
-                    // Google Scripts returns 302 then 200. XHR handles redirects automatically usually.
-                    // Since CORS might block reading status, we assume completion is success if no network error.
-                    if (xhr.readyState === 4) {
-                        resolve("Submitted");
-                    }
-                };
-
-                xhr.onerror = () => {
-                    // Only triggers on network level failure
-                    reject("Network Error");
-                };
-
-                xhr.send(JSON.stringify(submissionData));
+            // 1. Send to internal API route (Server-Side Proxy)
+            const response = await fetch("/api/book", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json",
+                },
+                body: JSON.stringify(submissionData),
             });
+
+            if (!response.ok) {
+                throw new Error("Server submission failed");
+            }
 
             // 2. Simulate small delay for UX
             await new Promise(resolve => setTimeout(resolve, 800));
