@@ -70,9 +70,6 @@ export default function BookingForm({ className, initialValues }: BookingFormPro
             await fetch(GOOGLE_SCRIPT_URL, {
                 method: "POST",
                 mode: "no-cors",
-                headers: {
-                    "Content-Type": "text/plain",
-                },
                 body: JSON.stringify(submissionData),
             });
 
@@ -82,6 +79,7 @@ export default function BookingForm({ className, initialValues }: BookingFormPro
             setSuccess(true);
         } catch (error) {
             console.error("Error submitting form", error);
+            alert("Submission Problem: " + error);
             // Even if sheet fails (e.g. adblocker), we mostly want to show success to prompt WhatsApp
             setSuccess(true);
         } finally {
