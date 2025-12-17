@@ -78,7 +78,7 @@ export default function BookingForm({ className, initialValues }: BookingFormPro
             if (typeof window !== "undefined" && (window as any).gtag) {
                 (window as any).gtag('event', 'conversion', {
                     'send_to': 'AW-16683904204/6WIdCJ78g9MbEMzZwJM-',
-                    'value': 1.0,
+                    'value': finalPrice,
                     'currency': 'INR'
                 });
             }
