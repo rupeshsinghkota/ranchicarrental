@@ -69,7 +69,6 @@ export default function BookingForm({ className, initialValues }: BookingFormPro
             // but the data still gets submitted.
             await fetch(GOOGLE_SCRIPT_URL, {
                 method: "POST",
-                mode: "no-cors",
                 headers: {
                     "Content-Type": "application/json",
                 },
