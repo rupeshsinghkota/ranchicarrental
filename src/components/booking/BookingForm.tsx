@@ -39,7 +39,7 @@ export default function BookingForm({ className, initialValues }: BookingFormPro
     };
 
     // REPLACE THIS WITH YOUR GOOGLE APPS SCRIPT URL
-    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbx_YOUR_SCRIPT_ID_HERE/exec";
+    const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyR5aUn-W7d8vTwbRuhuVJMN6hjhzKkd0BrNjiy6wDKyuvMr3IDfOXWU2FvkHJI3EVMag/exec";
 
     const handleSubmit = async (e: React.FormEvent) => {
         e.preventDefault();
