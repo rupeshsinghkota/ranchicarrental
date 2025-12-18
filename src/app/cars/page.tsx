@@ -16,16 +16,19 @@ export const metadata: Metadata = {
 
 export default function CarsPage() {
     return (
-        <div className="py-12 lg:py-24 bg-gradient-to-b from-slate-50 to-white min-h-screen">
-            <div className="container-custom">
-                <div className="text-center mb-16 space-y-4">
-                    <span className="text-primary font-semibold tracking-wider text-sm uppercase">Premium Fleet</span>
-                    <h1 className="text-4xl lg:text-5xl font-bold text-slate-900">Choose Your Drive</h1>
-                    <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+        <div className="bg-slate-50 min-h-screen">
+            <div className="bg-slate-900 text-white pt-32 pb-12 md:pt-40 md:pb-20">
+                <div className="container-custom text-center">
+                    <span className="inline-block py-1 px-3 rounded-full bg-slate-800 text-secondary text-sm font-bold tracking-wider uppercase mb-4">Premium Fleet</span>
+                    <h1 className="text-4xl lg:text-5xl font-bold mb-6">Choose Your Drive</h1>
+                    <p className="text-lg text-slate-300 max-w-2xl mx-auto">
                         Experience the freedom of self-drive with our well-maintained fleet.
                         Transparent 24-hour pricing, zero hidden charges.
                     </p>
                 </div>
+            </div>
+
+            <div className="py-12 lg:py-24 container-custom">
 
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {CAR_MODELS.map((car, index) => (
