@@ -39,12 +39,13 @@ export default function Footer() {
                 <div className="col-span-1">
                     <h3 className="text-white text-lg font-bold mb-6">Rent By Car Model</h3>
                     <ul className="space-y-3 text-sm">
-                        <li><Link href="/cars" className="hover:text-secondary transition-colors">Swift Car on Rent in Ranchi</Link></li>
-                        <li><Link href="/cars" className="hover:text-secondary transition-colors">Dzire Car Rental Ranchi</Link></li>
-                        <li><Link href="/cars" className="hover:text-secondary transition-colors">Baleno Self Drive Ranchi</Link></li>
-                        <li><Link href="/cars" className="hover:text-secondary transition-colors">Ertiga Car Rental Ranchi</Link></li>
-                        <li><Link href="/cars" className="hover:text-secondary transition-colors">Thar Self Drive Ranchi</Link></li>
-                        <li><Link href="/cars" className="hover:text-secondary transition-colors">Scorpio S11 Rental Ranchi</Link></li>
+                        <li><Link href="/cars/swift-rental-ranchi" className="hover:text-secondary transition-colors">Swift Car on Rent in Ranchi</Link></li>
+                        <li><Link href="/cars/dzire-rental-ranchi" className="hover:text-secondary transition-colors">Dzire Car Rental Ranchi</Link></li>
+                        <li><Link href="/cars/baleno-rental-ranchi" className="hover:text-secondary transition-colors">Baleno Self Drive Ranchi</Link></li>
+                        <li><Link href="/cars/ertiga-rental-ranchi" className="hover:text-secondary transition-colors">Ertiga Car Rental Ranchi</Link></li>
+                        <li><Link href="/cars/thar-rental-ranchi" className="hover:text-secondary transition-colors">Thar Self Drive Ranchi</Link></li>
+                        <li><Link href="/cars/scorpio-rental-ranchi" className="hover:text-secondary transition-colors">Scorpio S11 Rental Ranchi</Link></li>
+                        <li><Link href="/cars/innova-rental-ranchi" className="hover:text-secondary transition-colors">Innova Crysta Rental Ranchi</Link></li>
                     </ul>
                 </div>
 

@@ -27,11 +27,11 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={cn("sticky top-0 z-50 w-full transition-all duration-300", scrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-2 border-b border-white/20 supports-[backdrop-filter]:bg-white/60" : "bg-transparent py-4")}>
+        <header className={cn("sticky top-0 z-50 w-full transition-all duration-300", scrolled ? "bg-white/80 backdrop-blur-md shadow-sm py-2 border-b border-white/20 supports-[backdrop-filter]:bg-white/60 text-foreground" : "bg-transparent py-4 text-white")}>
             <div className="container-custom flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
-                    <span className="text-2xl font-bold text-primary">Ranchi<span className="text-secondary">CarRental</span></span>
+                    <span className={cn("text-2xl font-bold transition-colors", scrolled ? "text-primary" : "text-white")}>Ranchi<span className="text-secondary">CarRental</span></span>
                 </Link>
 
                 {/* Desktop Nav */}
@@ -40,7 +40,7 @@ export default function Header() {
                         <Link
                             key={item.name}
                             href={item.href}
-                            className="text-foreground hover:text-secondary font-medium transition-colors"
+                            className="hover:text-secondary font-medium transition-colors"
                         >
                             {item.name}
                         </Link>
@@ -60,7 +60,7 @@ export default function Header() {
                     </a>
 
                     <button
-                        className="md:hidden text-foreground p-2"
+                        className="md:hidden p-2 hover:text-secondary transition-colors"
                         onClick={() => setIsOpen(!isOpen)}
                         aria-label="Toggle menu"
                     >
