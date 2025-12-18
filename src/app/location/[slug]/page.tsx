@@ -8,14 +8,15 @@ import Link from "next/link";
 import { CheckCircle2, MapPin, Car, Phone } from "lucide-react";
 
 type Props = {
-    params: {
+    params: Promise<{
         slug: string;
-    };
+    }>;
 };
 
 // 1. Generate Metadata for SEO
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
-    const location = getLocationData(params.slug);
+    const { slug } = await params;
+    const location = getLocationData(slug);
     if (!location) return { title: "Location Not Found" };
 
     return {
@@ -41,8 +42,9 @@ export async function generateStaticParams() {
 }
 
 // 3. Page Component
-export default function LocationPage({ params }: Props) {
-    const location = getLocationData(params.slug);
+export default async function LocationPage({ params }: Props) {
+    const { slug } = await params;
+    const location = getLocationData(slug);
 
     if (!location) {
         notFound();
