@@ -143,6 +143,208 @@ export default function Footer() {
                 </div>
             </div>
 
+            {/* Comprehensive Keyword Cloud for 100% Coverage */}
+            <div className="container-custom mb-12 border-t border-slate-900 pt-8">
+                <h4 className="text-xs font-bold text-slate-500 uppercase tracking-widest mb-4">All Car Rental Searches</h4>
+                <div className="flex flex-wrap gap-x-4 gap-y-2 text-[11px] text-slate-600 leading-relaxed justify-center">
+                    <Link href="/" className="hover:text-slate-400">Car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/self-drive-car-rental-ranchi" className="hover:text-slate-400">Self drive car in Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/book" className="hover:text-slate-400">Rent a car Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/airport-taxi-service-ranchi" className="hover:text-slate-400">Airport taxi Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/outstation-taxi-service-ranchi" className="hover:text-slate-400">Outstation cabs Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/luxury-car-rental-ranchi" className="hover:text-slate-400">Luxury car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/wedding-car-rental-ranchi" className="hover:text-slate-400">Wedding car hire Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">Cheap car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/corporate-car-rental-ranchi" className="hover:text-slate-400">Car rental with driver Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">Ranchi car rental rates</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/about" className="hover:text-slate-400">Best car rental in Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-near-railway-station-ranchi" className="hover:text-slate-400">Railway station taxi Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/" className="hover:text-slate-400">Self drive car rental near me</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/cars/thar-rental-ranchi" className="hover:text-slate-400">Thar rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/cars/scorpio-rental-ranchi" className="hover:text-slate-400">Scorpio on rent in Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/cars/dzire-rental-ranchi" className="hover:text-slate-400">Swift dzire rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/cars/ertiga-rental-ranchi" className="hover:text-slate-400">Ertiga for rent Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/cars/innova-rental-ranchi" className="hover:text-slate-400">Innova crysta rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/wedding-car-rental-ranchi" className="hover:text-slate-400">Fortuner wedding car Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-lalpur-ranchi" className="hover:text-slate-400">Car hire in Lalpur</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-doranda-ranchi" className="hover:text-slate-400">Taxi service in Doranda</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-kanke-ranchi" className="hover:text-slate-400">Cab booking Kanke road</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-hatia-ranchi" className="hover:text-slate-400">Car rental Hatia station</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/outstation-taxi-service-ranchi" className="hover:text-slate-400">Outstation taxi from Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/outstation-taxi-service-ranchi" className="hover:text-slate-400">Intercity cab service Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/round-trip-taxi-ranchi" className="hover:text-slate-400">Round trip car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/one-way-taxi-ranchi" className="hover:text-slate-400">One way taxi Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/corporate-car-rental-ranchi" className="hover:text-slate-400">Monthly car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">Weekly car hire Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">Daily car rental price Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/book" className="hover:text-slate-400">Private car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/corporate-car-rental-ranchi" className="hover:text-slate-400">Corporate car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/corporate-car-rental-ranchi" className="hover:text-slate-400">Business travel car hire</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/tempo-traveller-rental-ranchi" className="hover:text-slate-400">Family car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/tempo-traveller-rental-ranchi" className="hover:text-slate-400">Group travel vehicle hire</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/cars/scorpio-rental-ranchi" className="hover:text-slate-400">SUV rental details Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/cars/dzire-rental-ranchi" className="hover:text-slate-400">Sedan car hire Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/cars/baleno-rental-ranchi" className="hover:text-slate-400">Hatchback rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/tempo-traveller-rental-ranchi" className="hover:text-slate-400">Mini bus rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/tempo-traveller-rental-ranchi" className="hover:text-slate-400">Traveller rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/wedding-car-rental-ranchi" className="hover:text-slate-400">Luxury wedding car price</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/wedding-car-rental-ranchi" className="hover:text-slate-400">Book car for marriage</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/wedding-car-rental-ranchi" className="hover:text-slate-400">Groom car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/wedding-car-rental-ranchi" className="hover:text-slate-400">Bridal car hire Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/wedding-car-rental-ranchi" className="hover:text-slate-400">Event car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/airport-taxi-service-ranchi" className="hover:text-slate-400">Airport pickup service</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/airport-taxi-service-ranchi" className="hover:text-slate-400">Airport drop taxi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/airport-taxi-service-ranchi" className="hover:text-slate-400">Late night car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/airport-taxi-service-ranchi" className="hover:text-slate-400">24 hours taxi service</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/contact" className="hover:text-slate-400">Emergency car rental</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/about" className="hover:text-slate-400">Safe taxi for women Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/book" className="hover:text-slate-400">Pet friendly car rental</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/about" className="hover:text-slate-400">Clean car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/about" className="hover:text-slate-400">Sanitized cab service</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">Affordable taxi Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">Low cost car rental</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">Budget car hire Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">Best rate taxi Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">Discount car rental</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/book" className="hover:text-slate-400">Online car booking Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/routes/ranchi-to-ramgarh-taxi" className="hover:text-slate-400">Ranchi to Ramgarh taxi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/routes/ranchi-to-hazaribagh-cab" className="hover:text-slate-400">Ranchi to Hazaribagh cab</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/routes/ranchi-to-dhanbad-car-rental" className="hover:text-slate-400">Ranchi to Dhanbad car rental</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/routes/ranchi-to-jamshedpur-taxi" className="hover:text-slate-400">Ranchi to Jamshedpur taxi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/routes/ranchi-to-bokaro-cab" className="hover:text-slate-400">Ranchi to Bokaro cab</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/routes/ranchi-to-deoghar-taxi" className="hover:text-slate-400">Ranchi to Deoghar car hire</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/routes/ranchi-to-patratu-taxi" className="hover:text-slate-400">Ranchi to Patratu trip</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/routes/ranchi-to-netarhat-car-rental" className="hover:text-slate-400">Ranchi to Netarhat car</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/routes/ranchi-to-dasham-falls-taxi" className="hover:text-slate-400">Ranchi to Dasham falls taxi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/routes/ranchi-to-hundru-falls-cab" className="hover:text-slate-400">Ranchi to Hundru falls cab</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/routes/ranchi-to-hundru-falls-cab" className="hover:text-slate-400">Local sightseeing car Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">Full day car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">Half day car hire Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">8 hours 80 km taxi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">12 hours car rental</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/self-drive-car-rental-ranchi" className="hover:text-slate-400">Unlimited km self drive</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/pricing" className="hover:text-slate-400">Car on rent without deposit</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/self-drive-car-rental-ranchi" className="hover:text-slate-400">Instant car delivery Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/self-drive-car-rental-ranchi" className="hover:text-slate-400">Doorstep car delivery</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-near-airport-ranchi" className="hover:text-slate-400">Self drive car near airport</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/airport-taxi-service-ranchi" className="hover:text-slate-400">Ranchi airport to main road taxi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/airport-taxi-service-ranchi" className="hover:text-slate-400">Ranchi station to airport cab</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-bariatu-ranchi" className="hover:text-slate-400">Bariatu car rental</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-morabadi-ranchi" className="hover:text-slate-400">Morabadi car hire</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-harmu-ranchi" className="hover:text-slate-400">Harmu car rental services</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-ratu-road-ranchi" className="hover:text-slate-400">Ratu road taxi service</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-kadru-ranchi" className="hover:text-slate-400">Kadru car rental</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-hinoo-ranchi" className="hover:text-slate-400">Hinoo car hire</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-namkum-ranchi" className="hover:text-slate-400">Namkum car rental</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-tupudana-ranchi" className="hover:text-slate-400">Tupudana car hire</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/taxi-service-dhurwa-ranchi" className="hover:text-slate-400">Dhurwa taxi service</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/location/car-rental-jagannathpur-ranchi" className="hover:text-slate-400">Jagannathpur car rental</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/luxury-car-rental-ranchi" className="hover:text-slate-400">Luxury cars on rent</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/luxury-car-rental-ranchi" className="hover:text-slate-400">Premium car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/luxury-car-rental-ranchi" className="hover:text-slate-400">Executive car hire</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/luxury-car-rental-ranchi" className="hover:text-slate-400">VIP car rental Ranchi</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/services/luxury-car-rental-ranchi" className="hover:text-slate-400">Chauffeur driven cars</Link>
+                    <span className="text-slate-800">•</span>
+                    <Link href="/contact" className="hover:text-slate-400">Rent a car for shooting</Link>
+                </div>
+            </div>
+
             <div className="border-t border-slate-800 container-custom pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-sm">
                 <p>&copy; {new Date().getFullYear()} RanchiCarRental. All rights reserved.</p>
                 <div className="flex flex-wrap gap-4 md:gap-6 justify-center md:justify-end">
