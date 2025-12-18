@@ -24,14 +24,14 @@ export default function Footer() {
                 <div className="col-span-1">
                     <h3 className="text-white text-lg font-bold mb-6">Popular Locations</h3>
                     <ul className="space-y-3 text-sm">
-                        <li><Link href="/book?location=ranchi" className="hover:text-secondary transition-colors">Self Drive Car Rental Ranchi</Link></li>
-                        <li><Link href="/book?location=airport" className="hover:text-secondary transition-colors">Car Rental near Birsa Munda Airport</Link></li>
-                        <li><Link href="/book?location=station" className="hover:text-secondary transition-colors">Car Rental near Ranchi Railway Station</Link></li>
-                        <li><Link href="/book?location=lalpur" className="hover:text-secondary transition-colors">Car Rental in Lalpur Ranchi</Link></li>
-                        <li><Link href="/book?location=doranda" className="hover:text-secondary transition-colors">Car Rental in Doranda</Link></li>
-                        <li><Link href="/book?location=kanke" className="hover:text-secondary transition-colors">Car Rental in Kanke</Link></li>
-                        <li><Link href="/services" className="hover:text-secondary transition-colors">Outstation Car Rental from Ranchi</Link></li>
-                        <li><Link href="/book?location=hatia" className="hover:text-secondary transition-colors">Safe Car Hire in Hatia</Link></li>
+                        <li><Link href="/location/car-rental-lalpur-ranchi" className="hover:text-secondary transition-colors">Car Rental in Lalpur Ranchi</Link></li>
+                        <li><Link href="/location/car-rental-near-airport-ranchi" className="hover:text-secondary transition-colors">Car Rental near Airport</Link></li>
+                        <li><Link href="/location/car-rental-near-railway-station-ranchi" className="hover:text-secondary transition-colors">Car Rental near Railway Station</Link></li>
+                        <li><Link href="/location/car-rental-doranda-ranchi" className="hover:text-secondary transition-colors">Car Rental in Doranda</Link></li>
+                        <li><Link href="/location/car-rental-kanke-ranchi" className="hover:text-secondary transition-colors">Car Rental in Kanke</Link></li>
+                        <li><Link href="/location/car-rental-hatia-ranchi" className="hover:text-secondary transition-colors">Car Rental in Hatia</Link></li>
+                        <li><Link href="/location/car-rental-bariatu-ranchi" className="hover:text-secondary transition-colors">Car Rental in Bariatu</Link></li>
+                        <li><Link href="/location/car-rental-ratu-road-ranchi" className="hover:text-secondary transition-colors">Car Rental in Ratu Road</Link></li>
                     </ul>
                 </div>
 
