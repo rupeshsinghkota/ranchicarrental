@@ -50,8 +50,6 @@ export default async function CarModelPage({ params }: Props) {
 
     return (
         <main className="min-h-screen bg-slate-50">
-            <Header />
-
             {/* Hero / Header Section */}
             <div className="bg-slate-900 text-white pt-32 pb-12 md:pt-40 md:pb-20">
                 <div className="container-custom grid md:grid-cols-2 gap-10 items-center">
@@ -159,7 +157,6 @@ export default async function CarModelPage({ params }: Props) {
                 </div>
             </section>
 
-            <Footer />
         </main>
     );
 }
