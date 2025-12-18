@@ -34,7 +34,7 @@ export const CAR_SEO_DATA: Record<string, CarSeoData> = {
         slug: "thar-rental-ranchi",
         modelName: "Thar 4x4",
         fullName: "Mahindra Thar 4x4",
-        image: "/images/cars/thar-4x4.jpg",
+        image: "/images/cars/thar-new.jpg",
         price: "₹5,000",
         seats: 4,
         transmission: "Manual",
