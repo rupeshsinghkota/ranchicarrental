@@ -233,6 +233,33 @@ export const SERVICE_SEO_DATA: Record<string, ServiceSeoData> = {
             { question: "Is there a minimum km limit?", answer: "Yes, usually 250km/day minimum billing applies for outstation." },
             { question: "Does driver food/stay need to be paid?", answer: "A fixed driver allowance is charged per night, they manage their own stay/food." }
         ]
+    },
+    "self-drive-car-rental-ranchi": {
+        slug: "self-drive-car-rental-ranchi",
+        title: "Self Drive Car Rental Ranchi | Rent Car Without Driver",
+        description: "Best Self Drive Car Rental in Ranchi. Rent Swift, Thar, Scorpio, or Baleno without driver. Unlimited km plans available. Easy documentation.",
+        heading: "Self Drive Car Rental in Ranchi",
+        subHeading: "Be your own boss. Drive where you want.",
+        icon: Car,
+        heroImage: "https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070&auto=format&fit=crop",
+        content: {
+            intro: "Experience the freedom of driving yourself with RanchiCarRental's self-drive service. Whether you need a car for a day, a week, or a month, we have a wide range of well-maintained hatchbacks, sedans, and SUVs to suit your needs.",
+            features: [
+                "Wide Fleet: Swift, Thar, Scorpio, Baleno, etc.",
+                "Flexible Plans: Hourly, Daily, Weekly, Monthly",
+                "Zero Security Deposit Options (Conditions Apply)",
+                "24/7 Roadside Assistance"
+            ],
+            whyChoose: [
+                { title: "Privacy", desc: "Enjoy your trip with complete privacy without a driver." },
+                { title: "Freedom", desc: "Stop anywhere, take detours, and explore at your own pace." },
+                { title: "Affordable", desc: "Save on driver charges and allowances." }
+            ]
+        },
+        faq: [
+            { question: "What documents are required?", answer: "A valid Driving License and Aadhar Card are mandatory." },
+            { question: "Is fuel included?", answer: "No, fuel is to be paid by the customer. We give the car with some fuel and expect it back at the same level." }
+        ]
     }
 };
 
