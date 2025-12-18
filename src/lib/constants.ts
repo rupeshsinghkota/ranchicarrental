@@ -23,6 +23,6 @@ export const CAR_MODELS = [
     { name: "Ertiga Top", seats: "7", price: "₹2,800", image: "/images/cars/ertiga-top.jpg" },
     { name: "XL6", seats: "6", price: "₹2,600", image: "/images/cars/xl6.jpg" },
     { name: "Scorpio S11 Black", seats: "7", price: "₹5,000", image: "/images/cars/mahindra-scorpio.png" },
-    { name: "Thar 4x4", seats: "4", price: "₹5,000", image: "/images/cars/thar-4x4.jpg" },
+    { name: "Thar 4x4", seats: "4", price: "₹5,000", image: "/images/cars/thar-new.webp" },
     { name: "Roxx", seats: "5", price: "₹8,000", image: "/images/cars/mahindra-thar-roxx.jpg" },
 ];
