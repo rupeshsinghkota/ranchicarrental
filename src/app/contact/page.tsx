@@ -13,14 +13,17 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
     return (
-        <div className="py-12 lg:py-24 bg-slate-50">
-            <div className="container-custom">
-                <div className="text-center mb-16">
-                    <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">Get in Touch</h1>
-                    <p className="text-lg text-slate-600 max-w-2xl mx-auto">
+        <div className="bg-slate-50">
+            <div className="bg-slate-900 text-white pt-32 pb-12 md:pt-40 md:pb-20">
+                <div className="container-custom text-center">
+                    <h1 className="text-4xl lg:text-5xl font-bold mb-6">Get in Touch</h1>
+                    <p className="text-lg text-slate-300 max-w-2xl mx-auto">
                         Have questions? Need a custom quote? We are here to help. Reach out to us via phone, email, or visit our office.
                     </p>
                 </div>
+            </div>
+
+            <div className="py-12 lg:py-24 container-custom">
 
                 <div className="grid lg:grid-cols-2 gap-12">
                     {/* Contact Info */}

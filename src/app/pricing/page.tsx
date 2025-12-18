@@ -46,12 +46,21 @@ export default function PricingPage() {
     };
 
     return (
-        <div className="py-6 lg:py-12 bg-slate-50">
+        <div className="bg-slate-50">
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
             />
-            <div className="container-custom">
+            <div className="bg-slate-900 text-white pt-32 pb-12 md:pt-40 md:pb-20">
+                <div className="container-custom text-center">
+                    <h1 className="text-4xl lg:text-5xl font-bold mb-6">Transparent Pricing</h1>
+                    <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+                        Simple 24-hour billing cycle. No hidden charges.
+                    </p>
+                </div>
+            </div>
+
+            <div className="container-custom py-12">
 
                 <SelfDrivePriceTable />
             </div>

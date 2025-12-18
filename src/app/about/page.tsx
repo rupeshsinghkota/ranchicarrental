@@ -8,10 +8,18 @@ export const metadata: Metadata = {
 
 export default function AboutPage() {
     return (
-        <div className="py-12 lg:py-24">
-            <div className="container-custom">
+        <div className="bg-slate-50">
+            <div className="bg-slate-900 text-white pt-32 pb-12 md:pt-40 md:pb-20">
+                <div className="container-custom text-center">
+                    <h1 className="text-4xl lg:text-5xl font-bold mb-6">About RanchiCarRental</h1>
+                    <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+                        Trusted Local Travel Partner since 2015.
+                    </p>
+                </div>
+            </div>
+
+            <div className="py-12 lg:py-24 container-custom">
                 <div className="max-w-4xl mx-auto">
-                    <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-8 text-center">About RanchiCarRental</h1>
 
                     <div className="prose prose-lg text-slate-600 mb-12 mx-auto">
                         <p className="lead text-xl text-slate-700 font-medium">

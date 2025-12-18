@@ -17,7 +17,7 @@ export default function FAQPage() {
         },
         {
             question: "Do you provide self-drive cars?",
-            answer: "No, currently we only provide chauffeur-driven cars to ensure safety and comfort."
+            answer: "Yes, we specialize in Self Drive Car Rentals. You can choose from our wide range of fleet including Hatchbacks, Sedans, and SUVs."
         },
         {
             question: "What are the cancellation charges?",
@@ -47,10 +47,17 @@ export default function FAQPage() {
     };
 
     return (
-        <div className="py-12 lg:py-24 bg-slate-50">
-            <div className="container-custom max-w-4xl mx-auto">
-                <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-12 text-center">Frequently Asked Questions</h1>
+        <div className="bg-slate-50">
+            <div className="bg-slate-900 text-white pt-32 pb-12 md:pt-40 md:pb-20">
+                <div className="container-custom text-center">
+                    <h1 className="text-4xl lg:text-5xl font-bold mb-6">Frequently Asked Questions</h1>
+                    <p className="text-lg text-slate-300 max-w-2xl mx-auto">
+                        Common questions about booking, payments, and safety.
+                    </p>
+                </div>
+            </div>
 
+            <div className="py-12 lg:py-24 container-custom max-w-4xl mx-auto">
                 <script
                     type="application/ld+json"
                     dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}

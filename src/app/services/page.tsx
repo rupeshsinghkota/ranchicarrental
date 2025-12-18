@@ -53,15 +53,18 @@ export default function ServicesPage() {
     ];
 
     return (
-        <div className="py-12 lg:py-24">
-            <div className="container-custom">
-                <div className="text-center mb-16">
-                    <h1 className="text-4xl lg:text-5xl font-bold text-slate-900 mb-6">Our Services</h1>
-                    <p className="text-lg text-slate-600 max-w-3xl mx-auto">
+        <div className="bg-slate-50">
+            <div className="bg-slate-900 text-white pt-32 pb-12 md:pt-40 md:pb-20">
+                <div className="container-custom text-center">
+                    <h1 className="text-4xl lg:text-5xl font-bold mb-6">Our Services</h1>
+                    <p className="text-lg text-slate-300 max-w-3xl mx-auto">
                         RanchiCarRental offers a comprehensive range of transport solutions tailored to your needs.
                         Whether it's a short trip within the city or a long drive across the country, we have you covered.
                     </p>
                 </div>
+            </div>
+
+            <div className="py-12 lg:py-24 container-custom">
 
                 <div className="space-y-16">
                     {services.map((service, index) => (
