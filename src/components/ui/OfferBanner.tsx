@@ -22,7 +22,7 @@ export default function OfferBanner() {
     if (!isVisible) return null;
 
     return (
-        <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 text-white py-2 px-4 relative animate-pulse-subtle">
+        <div className="hidden sm:block bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 text-white py-2 px-4 relative animate-pulse-subtle">
             <div className="container-custom flex flex-col sm:flex-row items-center justify-center gap-2 text-sm sm:text-base md:text-lg font-bold text-center">
                 <span className="hidden sm:inline">🎉</span>
                 <span className="leading-tight">Limited Time Offer: Book Today & Get 10% OFF on your first booking!</span>

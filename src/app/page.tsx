@@ -110,7 +110,7 @@ export default function Home() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
       />
       {/* Hero Section */}
-      <section className="relative bg-slate-900 text-white pt-40 pb-12 lg:pt-40 lg:pb-24 overflow-hidden">
+      <section className="relative bg-slate-900 text-white pt-32 pb-12 lg:pt-40 lg:pb-24 overflow-hidden">
         <div className="absolute inset-0 z-0">
           <Image
             src="https://images.unsplash.com/photo-1449965408869-eaa3f722e40d?q=80&w=2070&auto=format&fit=crop"
