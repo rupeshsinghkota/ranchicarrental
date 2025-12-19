@@ -101,7 +101,7 @@ export default function RootLayout({
       <body className={cn(inter.variable, "min-h-screen bg-background font-sans antialiased flex flex-col")}>
         <OfferBanner />
         <Header />
-        <main className="flex-grow">
+        <main className="flex-grow pb-20 sm:pb-0">
           {children}
         </main>
         <Footer />

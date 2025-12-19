@@ -22,8 +22,8 @@ export default function OfferBanner() {
     if (!isVisible) return null;
 
     return (
-        <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 text-white py-2 px-4 relative">
-            <div className="container-custom flex flex-col sm:flex-row items-center justify-center gap-2 text-xs sm:text-sm md:text-base font-bold text-center">
+        <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 text-white py-2 px-4 relative animate-pulse-subtle">
+            <div className="container-custom flex flex-col sm:flex-row items-center justify-center gap-2 text-sm sm:text-base md:text-lg font-bold text-center">
                 <span className="hidden sm:inline">🎉</span>
                 <span className="leading-tight">Limited Time Offer: Book Today & Get 10% OFF on your first booking!</span>
                 <span className="hidden sm:inline">🎉</span>
@@ -31,14 +31,14 @@ export default function OfferBanner() {
                     href="https://wa.me/918651144783?text=Hi, I want to book a car and claim my 10% discount!"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="bg-white text-orange-600 px-3 py-1 rounded-full text-xs font-bold hover:bg-orange-50 transition-colors whitespace-nowrap"
+                    className="bg-white text-orange-600 px-3 py-1 rounded-full text-xs sm:text-sm font-bold hover:bg-orange-50 hover:scale-105 transition-all whitespace-nowrap"
                 >
                     Claim Now
                 </a>
             </div>
             <button
                 onClick={handleDismiss}
-                className="absolute right-2 top-1/2 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
+                className="absolute right-2 top-1/2 -translate-y-1/2 text-white/80 hover:text-white hover:scale-110 transition-all"
                 aria-label="Dismiss offer"
             >
                 <X size={16} className="sm:w-[18px] sm:h-[18px]" />

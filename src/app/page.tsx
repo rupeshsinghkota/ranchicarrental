@@ -122,7 +122,7 @@ export default function Home() {
               Drive Your Way <br />
               <span className="text-transparent bg-clip-text bg-gradient-to-r from-white to-slate-400">In Ranchi</span>
             </h1>
-            <p className="text-lg lg:text-xl text-slate-300 mb-4 lg:mb-6 max-w-lg mx-auto lg:mx-0 leading-relaxed">
+            <p className="text-lg lg:text-xl text-slate-200 mb-4 lg:mb-6 max-w-lg mx-auto lg:mx-0 leading-relaxed">
               Experience the freedom of self-drive with our premium fleet. well-maintained cars, zero hidden charges, and 24/7 airport delivery.
             </p>
             <div className="mb-6 lg:mb-8">
@@ -135,7 +135,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <Link href="/book" className={getButtonClass('secondary', 'lg', "w-full sm:w-auto bg-secondary text-black hover:bg-amber-600 hover:text-white text-lg font-bold shadow-lg shadow-amber-500/20")}>
+              <Link href="/book" className={getButtonClass('secondary', 'lg', "w-full sm:w-auto bg-secondary text-black hover:bg-amber-600 hover:text-white text-lg font-bold shadow-lg shadow-amber-500/50 hover:shadow-amber-500/70 transition-shadow duration-300")}>
                 Book Now - Fast Response ⚡
               </Link>
               <Link href="/cars" className={getButtonClass('outline', 'lg', "w-full sm:w-auto border-white text-white hover:bg-white hover:text-slate-900 text-lg")}>
@@ -267,20 +267,20 @@ export default function Home() {
 
           <div className="grid md:grid-cols-3 gap-8">
             {featuredCars.map((car, i) => (
-              <div key={i} className="bg-slate-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-1 transition-all duration-300 relative">
+              <div key={i} className="bg-slate-800 rounded-xl overflow-hidden hover:transform hover:-translate-y-1 transition-all duration-300 relative group">
                 {/* FOMO Badges */}
                 {i === 0 && <PriceBadge type="popular" />}
                 {i === 1 && <div className="absolute top-3 right-3 z-10"><FOMOBadge type="demand" /></div>}
 
-                <div className="h-48 bg-slate-700 relative overflow-hidden group-hover:opacity-90 transition-opacity">
+                <Link href="/book" className="block h-48 bg-slate-700 relative overflow-hidden group-hover:opacity-90 transition-opacity">
                   <Image
                     src={car.image}
                     alt={car.name}
                     fill
-                    className="object-cover"
+                    className="object-cover group-hover:scale-105 transition-transform duration-300"
                     sizes="(max-width: 768px) 100vw, 33vw"
                   />
-                </div>
+                </Link>
                 <div className="p-6 text-left">
                   <h3 className="text-xl font-bold mb-2">{car?.name}</h3>
                   <a href={`tel:+918651144783`} className="text-secondary font-bold text-lg mb-4 inline-block hover:text-amber-400 transition-colors">

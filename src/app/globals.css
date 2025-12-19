@@ -2,21 +2,26 @@
 
 @theme {
   --font-sans: var(--font-sans);
-  
+
   /* Custom Colors */
-  --color-primary: #1e3a8a; /* blue-900 */
+  --color-primary: #1e3a8a;
+  /* blue-900 */
   --color-primary-foreground: #ffffff;
-  
-  --color-secondary: #f59e0b; /* amber-500 */
+
+  --color-secondary: #f59e0b;
+  /* amber-500 */
   --color-secondary-foreground: #000000;
-  
-  --color-accent: #22c55e; /* green-500 */
+
+  --color-accent: #22c55e;
+  /* green-500 */
   --color-accent-foreground: #ffffff;
 }
 
 :root {
-  --background: #f8fafc; /* slate-50 */
-  --foreground: #0f172a; /* slate-900 */
+  --background: #f8fafc;
+  /* slate-50 */
+  --foreground: #0f172a;
+  /* slate-900 */
 }
 
 body {
@@ -28,5 +33,37 @@ body {
 @layer utilities {
   .container-custom {
     @apply mx-auto max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+
+  .animate-pulse-subtle {
+    animation: pulse-subtle 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse-subtle {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0.95;
+    }
+  }
+
+  .animate-fade-in {
+    animation: fade-in 0.6s ease-out;
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
 }
