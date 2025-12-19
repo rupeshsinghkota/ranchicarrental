@@ -87,6 +87,7 @@ export const metadata: Metadata = {
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
+import StickyContactBar from "@/components/ui/StickyContactBar";
 
 export default function RootLayout({
   children,
@@ -101,6 +102,7 @@ export default function RootLayout({
           {children}
         </main>
         <Footer />
+        <StickyContactBar />
         <FloatingWhatsApp />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-0EKXZN63DQ"
