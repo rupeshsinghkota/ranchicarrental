@@ -27,7 +27,7 @@ export default function Header() {
     }, []);
 
     return (
-        <header className={cn("fixed z-50 w-full transition-all duration-300", scrolled ? "top-0 bg-white/80 backdrop-blur-md shadow-sm py-2 border-b border-white/20 supports-[backdrop-filter]:bg-white/60 text-foreground" : "top-10 bg-transparent py-4 text-white")}>
+        <header className={cn("fixed z-50 w-full transition-all duration-300", scrolled ? "top-0 bg-white/80 backdrop-blur-md shadow-sm py-2 border-b border-white/20 supports-[backdrop-filter]:bg-white/60 text-foreground" : "top-0 sm:top-10 bg-transparent py-4 text-white")}>
             <div className="container-custom flex items-center justify-between">
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2">
