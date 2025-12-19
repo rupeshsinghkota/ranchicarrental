@@ -88,6 +88,8 @@ import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
 import FloatingWhatsApp from "@/components/ui/FloatingWhatsApp";
 import StickyContactBar from "@/components/ui/StickyContactBar";
+import OfferBanner from "@/components/ui/OfferBanner";
+import ExitIntentPopup from "@/components/ui/ExitIntentPopup";
 
 export default function RootLayout({
   children,
@@ -97,6 +99,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={cn(inter.variable, "min-h-screen bg-background font-sans antialiased flex flex-col")}>
+        <OfferBanner />
         <Header />
         <main className="flex-grow">
           {children}
@@ -104,6 +107,7 @@ export default function RootLayout({
         <Footer />
         <StickyContactBar />
         <FloatingWhatsApp />
+        <ExitIntentPopup />
         <Script
           src="https://www.googletagmanager.com/gtag/js?id=G-0EKXZN63DQ"
           strategy="afterInteractive"
