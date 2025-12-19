@@ -12,6 +12,9 @@ export const trackPageView = (url: string) => {
         window.gtag('config', 'G-HJHLQHNWG4', {
             page_path: url,
         });
+        window.gtag('config', 'G-0EKXZN63DQ', {
+            page_path: url,
+        });
     }
 };
 
