@@ -150,7 +150,7 @@ n.queue=[];t=b.createElement(e);t.async=!0;
 t.src=v;s=b.getElementsByTagName(e)[0];
 s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', 'YOUR_FACEBOOK_PIXEL_ID');
+fbq('init', '1365565984520099');
 fbq('track', 'PageView');
 `}
         </Script>
@@ -159,7 +159,7 @@ fbq('track', 'PageView');
             height="1"
             width="1"
             style={{ display: 'none' }}
-            src="https://www.facebook.com/tr?id=YOUR_FACEBOOK_PIXEL_ID&ev=PageView&noscript=1"
+            src="https://www.facebook.com/tr?id=1365565984520099&ev=PageView&noscript=1"
             alt=""
           />
         </noscript>
