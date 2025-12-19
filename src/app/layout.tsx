@@ -71,6 +71,11 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: '/icon.png',
+    shortcut: '/icon.png',
+    apple: '/icon.png',
+  },
   other: {
     "geo.region": "IN-JH",
     "geo.placename": "Ranchi",
