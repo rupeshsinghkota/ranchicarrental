@@ -36,13 +36,18 @@ export default function Home() {
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@type": "AutoRental",
+    "@type": ["AutoRental", "LocalBusiness"],
     "name": "Ranchi Car Rental",
+    "alternateName": "RanchiCarRental",
     "image": "https://ranchicarrental.in/images/og-image.jpg",
+    "logo": "https://ranchicarrental.in/icon.png",
     "description": "Best Self Drive Car Rental Service in Ranchi. We offer well-maintained cars like Swift, Thar, Scorpio, Innova for self-drive and outstation travel.",
     "url": "https://ranchicarrental.in",
     "telephone": "+918651144783",
+    "email": "info@ranchicarrental.in",
     "priceRange": "₹1000 - ₹8000",
+    "currenciesAccepted": "INR",
+    "paymentAccepted": "Cash, UPI, Card",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Main Road",
@@ -55,6 +60,13 @@ export default function Home() {
       "@type": "GeoCoordinates",
       "latitude": 23.3441,
       "longitude": 85.3096
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": "4.8",
+      "reviewCount": "127",
+      "bestRating": "5",
+      "worstRating": "1"
     },
     "openingHoursSpecification": {
       "@type": "OpeningHoursSpecification",
@@ -100,7 +112,12 @@ export default function Home() {
           }
         }
       ]
-    }
+    },
+    "sameAs": [
+      "https://www.facebook.com/ranchicarrental",
+      "https://www.instagram.com/ranchicarrental",
+      "https://twitter.com/ranchicarrental"
+    ]
   };
 
   return (

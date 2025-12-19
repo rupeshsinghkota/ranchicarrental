@@ -4,7 +4,12 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 
-const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
+const inter = Inter({
+  subsets: ["latin"],
+  variable: "--font-sans",
+  display: 'swap',
+  preload: true,
+});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://ranchicarrental.in'),
@@ -53,6 +58,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
+    site: "@ranchicarrental",
+    creator: "@ranchicarrental",
     title: "Ranchi Car Rental | Self Drive & Taxi Services",
     description: "Best Self Drive Cars in Ranchi starting @ ₹1000/day. Book Now!",
     images: ['/images/og-image.jpg'],
@@ -76,11 +83,16 @@ export const metadata: Metadata = {
     shortcut: '/icon.png',
     apple: '/icon.png',
   },
+  verification: {
+    google: 'your-google-verification-code',
+  },
   other: {
     "geo.region": "IN-JH",
     "geo.placename": "Ranchi",
-    "geo.position": "23.3441;85.3096", // Ranchi coordinates
+    "geo.position": "23.3441;85.3096",
     "ICBM": "23.3441, 85.3096",
+    "language": "en-IN",
+    "rating": "general",
   },
 };
 
@@ -97,7 +109,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en-IN">
+      <head>
+        <link rel="preconnect" href="https://images.unsplash.com" />
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://images.unsplash.com" />
+      </head>
       <body className={cn(inter.variable, "min-h-screen bg-background font-sans antialiased flex flex-col")}>
         <OfferBanner />
         <Header />
@@ -114,12 +131,12 @@ export default function RootLayout({
         />
         <Script id="google-analytics" strategy="afterInteractive">
           {`
-            window.dataLayer = window.dataLayer || [];
-            function gtag(){dataLayer.push(arguments);}
-            gtag('js', new Date());
+window.dataLayer = window.dataLayer || [];
+function gtag() { dataLayer.push(arguments); }
+gtag('js', new Date());
 
-            gtag('config', 'G-0EKXZN63DQ');
-          `}
+gtag('config', 'G-0EKXZN63DQ');
+`}
         </Script>
       </body>
     </html>
