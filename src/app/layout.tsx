@@ -136,7 +136,6 @@ function gtag() { dataLayer.push(arguments); }
 gtag('js', new Date());
 
 gtag('config', 'G-HJHLQHNWG4');
-gtag('config', 'G-0EKXZN63DQ');
 `}
         </Script>
 
