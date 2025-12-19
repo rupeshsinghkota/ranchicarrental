@@ -22,16 +22,16 @@ export default function OfferBanner() {
     if (!isVisible) return null;
 
     return (
-        <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 text-white py-2.5 px-4 relative">
-            <div className="container-custom flex items-center justify-center gap-2 text-sm md:text-base font-bold text-center">
+        <div className="bg-gradient-to-r from-amber-500 via-orange-500 to-red-500 text-white py-2 px-4 relative">
+            <div className="container-custom flex flex-col sm:flex-row items-center justify-center gap-2 text-xs sm:text-sm md:text-base font-bold text-center">
                 <span className="hidden sm:inline">🎉</span>
-                <span>Limited Time Offer: Book Today & Get 10% OFF on your first booking!</span>
+                <span className="leading-tight">Limited Time Offer: Book Today & Get 10% OFF on your first booking!</span>
                 <span className="hidden sm:inline">🎉</span>
                 <a
                     href="https://wa.me/918651144783?text=Hi, I want to book a car and claim my 10% discount!"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="ml-2 bg-white text-orange-600 px-3 py-1 rounded-full text-xs font-bold hover:bg-orange-50 transition-colors"
+                    className="bg-white text-orange-600 px-3 py-1 rounded-full text-xs font-bold hover:bg-orange-50 transition-colors whitespace-nowrap"
                 >
                     Claim Now
                 </a>
@@ -41,7 +41,7 @@ export default function OfferBanner() {
                 className="absolute right-2 top-1/2 -translate-y-1/2 text-white/80 hover:text-white transition-colors"
                 aria-label="Dismiss offer"
             >
-                <X size={18} />
+                <X size={16} className="sm:w-[18px] sm:h-[18px]" />
             </button>
         </div>
     );
