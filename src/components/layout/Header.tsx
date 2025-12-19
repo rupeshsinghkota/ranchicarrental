@@ -60,7 +60,7 @@ export default function Header() {
                     </a>
 
                     <button
-                        className="md:hidden p-2 hover:text-secondary transition-colors"
+                        className={cn("md:hidden p-2 hover:text-secondary transition-colors", scrolled ? "text-foreground" : "text-white")}
                         onClick={() => setIsOpen(!isOpen)}
                         aria-label="Toggle menu"
                     >
@@ -77,7 +77,7 @@ export default function Header() {
                             <Link
                                 key={item.name}
                                 href={item.href}
-                                className="text-lg font-medium text-foreground hover:text-secondary py-2 border-b border-gray-100 last:border-0"
+                                className="text-lg font-medium text-gray-900 hover:text-secondary py-2 border-b border-gray-100 last:border-0"
                                 onClick={() => setIsOpen(false)}
                             >
                                 {item.name}
