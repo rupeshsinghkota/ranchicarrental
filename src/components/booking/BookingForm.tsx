@@ -83,6 +83,16 @@ export default function BookingForm({ className, initialValues }: BookingFormPro
                 });
             }
 
+            // Track Facebook Pixel Conversion
+            if (typeof window !== "undefined" && (window as any).fbq) {
+                (window as any).fbq('track', 'Lead', {
+                    value: finalPrice,
+                    currency: 'INR',
+                    content_name: formData.carType,
+                    content_category: 'Car Rental'
+                });
+            }
+
             // 2. Simulate small delay for UX
             await new Promise(resolve => setTimeout(resolve, 800));
 

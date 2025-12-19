@@ -1,5 +1,7 @@
 "use client";
 
+import { fbEvents } from "@/lib/fbPixel";
+
 interface QuickBookButtonProps {
     carName: string;
     carPrice: string;
@@ -8,6 +10,9 @@ interface QuickBookButtonProps {
 
 export default function QuickBookButton({ carName, carPrice, className = "" }: QuickBookButtonProps) {
     const handleQuickBook = () => {
+        // Track Facebook Pixel event
+        fbEvents.contact('whatsapp', carName);
+
         const message = `Hi! I want to book *${carName}* at ${carPrice}/day. Please confirm availability.`;
         const encodedMessage = encodeURIComponent(message);
         const whatsappUrl = `https://wa.me/918651144783?text=${encodedMessage}`;
