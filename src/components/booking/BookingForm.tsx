@@ -4,7 +4,7 @@ import { useState } from "react";
 import { useRouter } from "next/navigation";
 import { CheckCircle, Loader2 } from "lucide-react";
 import { Button, Input, Label, Select } from "@/components/ui/form-elements";
-import { cn, getButtonClass } from "@/lib/utils";
+import { cn } from "@/lib/utils";
 import { gaEvents } from "@/lib/analytics";
 import { CAR_MODELS } from "@/lib/constants";
 
