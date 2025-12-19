@@ -4,6 +4,7 @@ import { Button, getButtonClass } from "@/components/ui/form-elements";
 import { Car, User, Fuel } from "lucide-react";
 import type { Metadata } from "next";
 import { CAR_MODELS } from "@/lib/constants";
+import QuickBookButton from "@/components/ui/QuickBookButton";
 
 export const metadata: Metadata = {
     title: "Our Fleet | Rent Swift, Thar, Scorpio, Innova in Ranchi",
@@ -81,9 +82,12 @@ export default function CarsPage() {
                                         </div>
                                     </div>
 
-                                    <Link href="/book" className={getButtonClass('primary', 'default', "w-full bg-slate-900 hover:bg-primary text-white hover:text-white transition-all duration-300 h-12 text-base font-semibold rounded-xl shadow-lg hover:shadow-primary/25")}>
-                                        Book This Car
-                                    </Link>
+                                    <div className="grid grid-cols-2 gap-3">
+                                        <Link href="/book" className={getButtonClass('primary', 'default', "bg-slate-900 hover:bg-primary text-white hover:text-white transition-all duration-300 h-12 text-base font-semibold rounded-xl shadow-lg hover:shadow-primary/25")}>
+                                            Book Now
+                                        </Link>
+                                        <QuickBookButton carName={car.name} carPrice={car.price} />
+                                    </div>
                                 </div>
                             </div>
                         </div>
